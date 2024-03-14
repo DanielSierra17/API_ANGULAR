@@ -1,0 +1,14 @@
+<h1>Products</h1>
+
+@for (product of productList; track $index) {
+    <div class="product-card">
+        <img src="{{ product.image }}" alt="{{ product.title }}">
+        <div class="product-card-content">
+            <p><strong>Number:</strong> {{ product.id }}</p>
+            <p><strong>Title:</strong> {{ product.title }}</p>
+            <p><strong>Price:</strong> {{ product.price }}</p>
+            <p><strong>Description:</strong> {{ product.description }}</p>
+            <p><strong>Category:</strong> {{ product.category }}</p>
+        </div>
+    </div>
+}
